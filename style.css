@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #edf2fc;
+    --bg-light: #f5f7fa;
+    --text-light: #555;
+    --bg-dark: #212121;
+    --text-dark: #edf2fc;
+  }
+  
+  body {
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(114, 110, 110, 0.1);
+  }
+  
+  .navbar.dark-mode {
+    background-color: var(--primary-color);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar.dark-mode a {
+    color: var(--secondary-color);
+  }
+  
+  .navbar button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar.dark-mode button {
+    background-color: #007BFF;
+  }
+  
+  #icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .header {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(201, 172, 172, 0.1);
+  }
+  
+  .header.dark-mode {
+    background-color: var(--primary-color);
+  }
+  
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  /* Skills Section */
+  .skills, .experience {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+  }
+  
+  .dark-mode .skills-grid,.dark-mode .skills-section, .dark-mode .experience-section,.dark-mode .experience-card,.dark-mode .project-details ,.dark-mode .project-image{
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  /* Card or Icon Containers */
+  .skills .card, .experience .card {
+    background-color: white;
+    color: #333;
+  }
+  
+  .dark-mode .skills .card, .dark-mode .experience .card,.dark-mode .project-details h3,.dark-mode .portfolio h2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
